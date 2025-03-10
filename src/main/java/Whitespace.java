@@ -18,8 +18,18 @@ public class Whitespace {
     private void countBoth(String testdata) {
 
         // count the number of whitepace chars and non-whitspace chars.
+        int whiteSpace = 0;
+        int nonWhiteSpace = 0;
         // need to use a FOR loop.
+        for(int i =0; i <= testdata.length()-1;i++){
+            if(testdata.charAt(i) == ' '){
+                whiteSpace++;
+            }else{
+                nonWhiteSpace++;
+            }
+        }
         // print the results simply on a line #whitespaces, #ofnonwhitespacechars for each file.
+        System.out.println(whiteSpace + ", " + nonWhiteSpace);
 
     }
 
